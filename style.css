@@ -1,3 +1,55 @@
 body {
+	padding-top: 70px;
 	background-image: url("./Iceland.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: local;
+}
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+
+.parallax__layer--back {
+  transform: translateZ(-1px);
+}
+
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+	text-align: center;
+}
+
+.someText {
+	text-align: center;
+	font: bold 2em "Arial", sans-serif;
+	color: #353535;
+	background-color: rgba(202, 205, 209, 0.5);
+}
+
+#navbarText {
+	font: bold 1em "Arial", sans-serif;
+}
+
+#user {
+	font: bold 2.5em "Arial", sans-serif;
 }
