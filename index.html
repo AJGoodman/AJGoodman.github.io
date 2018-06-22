@@ -3,9 +3,12 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>AJ Goodman</title>
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="./style.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -21,101 +24,64 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
-		        <li id="navbarText"><a href="">Background</a></li>
-		        <li id="navbarText"><a href="">Activities</a></li>
-		        <li id="user"><a href="">AJ Goodman</a></li>
-		        <li id="navbarText"><a href="">Travels</a></li>		        
-		        <li id="navbarText"><a href="">Fun Facts</a></li>
+		        <li class="navbarText"><a href="#about">About Me</a></li>
+		        <li class="navbarText"><a href="#activities">Activities</a></li>
+		        <li class="user"><a href="#home">AJ GOODMAN</a></li>
+		        <li class="navbarText"><a href="#travels">Travels</a></li>		        
+		        <li class="navbarText"><a href="#funFacts">Fun Facts</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav> 
-		<!--<h1 class="text-center" id="user">AJ Goodman</h1>
-		<h2 class="text-center">(This is me in Iceland)</h2>--> 
+		<div id="home">
+			<img class="full-width-img" src="./Iceland.jpg">
+		</div>
+		<div class="container-fluid dark-content" id="about">
+			<div class="row">
+				<div class="col-md-3">
+					<h3>ABOUT ME</h3>		
+					<p class="someText">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit purus vel sodales rutrum. Suspendisse vitae tincidunt erat, ut scelerisque turpis. Duis et nibh id eros commodo sodales. Donec eget molestie nisl. Nunc imperdiet velit urna, sed vehicula sem iaculis in. Phasellus in tincidunt odio, sed malesuada dolor. Curabitur erat erat, commodo scelerisque posuere et, imperdiet non ex. Sed faucibus id odio quis lacinia. Vestibulum sem tellus, rhoncus eget nisl vitae, porta tristique lectus. Nulla dapibus tempor ligula ut consequat. Maecenas porttitor massa ut lacinia molestie.<br><br>
+					</p>
+					
+				</div>
+			</div>
+		</div>
+		<div>
+		<div class="container-fluid light-content" id="travels">
+			<div class="row">
+				<div class="col-md-9">
+					<div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfk_vbwL-V-o2C9BpifIGH4QiT9lc-tgU&callback=initMap"
+    async defer></script>
+				</div>
+					<div class="col-md-3">
+					<h3>MY TRAVELS</h3>		
+					<p class="someText">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit purus vel sodales rutrum. Suspendisse vitae tincidunt erat, ut scelerisque turpis. Duis et nibh id eros commodo sodales. Donec eget molestie nisl. Nunc imperdiet velit urna, sed vehicula sem iaculis in. Phasellus in tincidunt odio, sed malesuada dolor. Curabitur erat erat, commodo scelerisque posuere et, imperdiet non ex. Sed faucibus id odio quis lacinia. Vestibulum sem tellus, rhoncus eget nisl vitae, porta tristique lectus. Nulla dapibus tempor ligula ut consequat. Maecenas porttitor massa ut lacinia molestie.<br><br>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="content" id="funFacts">
+			<!--<h3 class="h">FUN FACTS</h3>		
+				<p class="someText">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit purus vel sodales rutrum. Suspendisse vitae tincidunt erat, ut scelerisque turpis. Duis et nibh id eros commodo sodales. Donec eget molestie nisl. Nunc imperdiet velit urna, sed vehicula sem iaculis in. Phasellus in tincidunt odio, sed malesuada dolor. Curabitur erat erat, commodo scelerisque posuere et, imperdiet non ex. Sed faucibus id odio quis lacinia. Vestibulum sem tellus, rhoncus eget nisl vitae, porta tristique lectus. Nulla dapibus tempor ligula ut consequat. Maecenas porttitor massa ut lacinia molestie.<br><br>
 
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+					Donec vulputate lacus tempus hendrerit hendrerit. Duis pulvinar purus id porttitor ullamcorper. Nunc eu tortor quam. Duis vulputate risus vel nisi molestie, ultrices faucibus arcu condimentum. Suspendisse potenti. Sed quis gravida erat. Proin in orci nec erat aliquet pulvinar. Curabitur nec condimentum magna, ut semper urna. Nam in fermentum urna. Duis diam urna, commodo finibus scelerisque et, iaculis a mi. Suspendisse pretium, neque eu sagittis suscipit, nulla turpis interdum diam, eget rutrum ante leo ut sem. Nulla sagittis lectus vitae turpis eleifend ultrices. Cras ultrices lacus varius, luctus massa eu, accumsan sapien.<br><br>
 
-		
-		<p class="someText">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit purus vel sodales rutrum. Suspendisse vitae tincidunt erat, ut scelerisque turpis. Duis et nibh id eros commodo sodales. Donec eget molestie nisl. Nunc imperdiet velit urna, sed vehicula sem iaculis in. Phasellus in tincidunt odio, sed malesuada dolor. Curabitur erat erat, commodo scelerisque posuere et, imperdiet non ex. Sed faucibus id odio quis lacinia. Vestibulum sem tellus, rhoncus eget nisl vitae, porta tristique lectus. Nulla dapibus tempor ligula ut consequat. Maecenas porttitor massa ut lacinia molestie.<br><br>
-
-			Donec vulputate lacus tempus hendrerit hendrerit. Duis pulvinar purus id porttitor ullamcorper. Nunc eu tortor quam. Duis vulputate risus vel nisi molestie, ultrices faucibus arcu condimentum. Suspendisse potenti. Sed quis gravida erat. Proin in orci nec erat aliquet pulvinar. Curabitur nec condimentum magna, ut semper urna. Nam in fermentum urna. Duis diam urna, commodo finibus scelerisque et, iaculis a mi. Suspendisse pretium, neque eu sagittis suscipit, nulla turpis interdum diam, eget rutrum ante leo ut sem. Nulla sagittis lectus vitae turpis eleifend ultrices. Cras ultrices lacus varius, luctus massa eu, accumsan sapien.<br><br>
-
-			Proin rhoncus tincidunt rutrum. Nunc maximus rutrum elit vitae vehicula. Sed ligula lacus, consequat eu mi at, euismod feugiat nisi. Sed hendrerit ipsum ut magna cursus, non porta nibh vulputate. Proin auctor dolor a ante finibus scelerisque. Nullam ultrices sit amet sapien id placerat. Vivamus nunc augue, porta ac neque vitae, dignissim maximus lacus. Phasellus mattis augue ex, commodo commodo risus finibus eu. Etiam interdum ante tempor, auctor sapien eleifend, porttitor elit. Cras nisi ante, varius a est ut, congue scelerisque purus.<br><br>
-		</p>
-		<!--s-->
-		
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+					Proin rhoncus tincidunt rutrum. Nunc maximus rutrum elit vitae vehicula. Sed ligula lacus, consequat eu mi at, euismod feugiat nisi. Sed hendrerit ipsum ut magna cursus, non porta nibh vulputate. Proin auctor dolor a ante finibus scelerisque. Nullam ultrices sit amet sapien id placerat. Vivamus nunc augue, porta ac neque vitae, dignissim maximus lacus. Phasellus mattis augue ex, commodo commodo risus finibus eu. Etiam interdum ante tempor, auctor sapien eleifend, porttitor elit. Cras nisi ante, varius a est ut, congue scelerisque purus.<br><br>
+				</p>-->
+		</div>
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	</body>
