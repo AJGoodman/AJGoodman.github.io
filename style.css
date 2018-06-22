@@ -34,6 +34,10 @@ h3 {
 	font: bold 2em "Arial", sans-serif;
 }
 
+#map {
+	height: 100%;
+}
+
 #id {
 	margin-left: 75%;
 }
