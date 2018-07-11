@@ -29,7 +29,7 @@ function initMap() {
 		//new Location('Costa Rica', {lat:, lng:}, ''),
 		new Location('Milan', {lat:45.46, lng:9.19}, '<img src="./MilanDuomo.jpg" class="infoWindowImage">'),
 		new Location('Lake Como', {lat:45.99, lng:9.26}, '<img src="./LakeComo.jpg" class="infoWindowImage">'),
-		new Location('Venice', {lat:45.44, lng:12.33},  ),
+		new Location('Venice', {lat:45.44, lng:12.33}, locationInfo.venice ),
 		//new Location('Provence', {lat:, lng:}, ''),
 		new Location('Niagara Falls', {lat:43.08, lng:-79.07}, ''),
 		new Location('Reynisfjara', {lat:63.41, lng:-19.09}, '<img src="./Reynisfjara.jpg" class="infoWindowImage">'),
