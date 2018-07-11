@@ -11,9 +11,7 @@ function initMap() {
 		this.content = content;
 	}
 
-	var locationInfo = {
-		venice : '<div><img src="./BridgeOfSighs.jpg" class="infoWindowImage"></div><div><p>Venice: In front of the famous Bridge of Sighs in Venice.  The bridge connected the prison with the Doge\'s palace, where all cases were heard.  It was named the bridge of sighs because prisoners walking across would glimpse out to the lagoon, catch their last look at the outdoors, and let out a sigh. May 2018</p></div>'
-	};
+
 
 	var locations = [
 		new Location('Arlington', {lat:38.88 , lng:-77.11}, 'home'),
@@ -27,14 +25,14 @@ function initMap() {
 		new Location('Playa Del Carmen', {lat:20.63, lng:-87.06}, 'hola'),
 		new Location('Montego Bay', {lat:18.46, lng:-78.01}, 'hola'),
 		//new Location('Costa Rica', {lat:, lng:}, ''),
-		new Location('Milan', {lat:45.46, lng:9.19}, '<img src="./MilanDuomo.jpg" class="infoWindowImage">'),
-		new Location('Lake Como', {lat:45.99, lng:9.26}, '<img src="./LakeComo.jpg" class="infoWindowImage">'),
-		new Location('Venice', {lat:45.44, lng:12.33}, locationInfo.venice ),
+		new Location('Milan', {lat:45.46, lng:9.19}, locationInfo.milan),
+		new Location('Lake Como', {lat:45.99, lng:9.26}, locationInfo.lakeComo),
+		new Location('Venice', {lat:45.44, lng:12.33}, locationInfo.venice),
 		//new Location('Provence', {lat:, lng:}, ''),
-		new Location('Niagara Falls', {lat:43.08, lng:-79.07}, ''),
-		new Location('Reynisfjara', {lat:63.41, lng:-19.09}, '<img src="./Reynisfjara.jpg" class="infoWindowImage">'),
-		new Location('Skogafoss', {lat:63.53, lng:-19.51}, '<img src="./Skogafoss.jpg" class="infoWindowImage">'),
-		new Location('Svinafellsjokull', {lat:63.98, lng:-16.96}, '<img src="./Iceland.jpg" class="infoWindowImage">'),
+		new Location('Niagara Falls', {lat:43.08, lng:-79.07}, ),
+		new Location('Reynisfjara', {lat:63.41, lng:-19.09}, locationInfo.reynisfjara),
+		new Location('Skogafoss', {lat:63.53, lng:-19.51}, locationInfo.skogafoss),
+		new Location('Svinafellsjokull', {lat:63.98, lng:-16.96}, locationInfo.svinafellsjokull),
 
 	]
 
