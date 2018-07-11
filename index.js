@@ -12,7 +12,7 @@ function initMap() {
 	}
 
 	var locationInfo = {
-		venice : '<div><img src="./BridgeOfSighs.jpg" class="infoWindowImage"></div><div><p></p></div>'
+		venice : '<div><img src="./BridgeOfSighs.jpg" class="infoWindowImage"></div><div><p>Venice: In front of the famous Bridge of Sighs in Venice.  The bridge connected the prison with the Doge\'s palace, where all cases were heard.  It was named the bridge of sighs because prisoners walking across would glimpse out to the lagoon, catch their last look at the outdoors, and let out a sigh. May 2018</p></div>'
 	};
 
 	var locations = [
