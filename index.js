@@ -11,10 +11,6 @@ function initMap() {
 		this.content = content;
 	}
 
-	var locationContent {
-		venice : '<div><img src="./BridgeOfSighs.jpg" class="infoWindowImage"></div><div><p></p></div>'
-	}
-
 	var locations = [
 		new Location('Arlington', {lat:38.88 , lng:-77.11}, 'home'),
 		new Location('San Francisco', {lat:37.79 , lng:-122.42}, 'not home'),
@@ -29,12 +25,12 @@ function initMap() {
 		//new Location('Costa Rica', {lat:, lng:}, ''),
 		new Location('Milan', {lat:45.46, lng:9.19}, '<img src="./MilanDuomo.jpg" class="infoWindowImage">'),
 		new Location('Lake Como', {lat:45.99, lng:9.26}, '<img src="./LakeComo.jpg" class="infoWindowImage">'),
-		new Location('Venice', {lat:45.44, lng:12.33}, locationContent.venice),
+		new Location('Venice', {lat:45.44, lng:12.33},  '<div><img src="./BridgeOfSighs.jpg" class="infoWindowImage"></div><div><p></p></div>'),
 		//new Location('Provence', {lat:, lng:}, ''),
 		new Location('Niagara Falls', {lat:43.08, lng:-79.07}, ''),
 		new Location('Reynisfjara', {lat:63.41, lng:-19.09}, '<img src="./Reynisfjara.jpg" class="infoWindowImage">'),
 		new Location('Skogafoss', {lat:63.53, lng:-19.51}, '<img src="./Skogafoss.jpg" class="infoWindowImage">'),
-		new Location('Skeidararsandur', {lat:63.98, lng:-16.96}, '<img src="./Iceland.jpg" class="infoWindowImage">'),
+		new Location('Svinafellsjokull', {lat:63.98, lng:-16.96}, '<img src="./Iceland.jpg" class="infoWindowImage">'),
 
 	]
 
