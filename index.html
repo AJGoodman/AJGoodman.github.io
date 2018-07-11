@@ -39,7 +39,7 @@
 				<div class="col-md-3">
 					<h3>ABOUT ME</h3>		
 					<p class="someText">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit purus vel sodales rutrum. Suspendisse vitae tincidunt erat, ut scelerisque turpis. Duis et nibh id eros commodo sodales. Donec eget molestie nisl. Nunc imperdiet velit urna, sed vehicula sem iaculis in. Phasellus in tincidunt odio, sed malesuada dolor. Curabitur erat erat, commodo scelerisque posuere et, imperdiet non ex. Sed faucibus id odio quis lacinia. Vestibulum sem tellus, rhoncus eget nisl vitae, porta tristique lectus. Nulla dapibus tempor ligula ut consequat. Maecenas porttitor massa ut lacinia molestie.<br><br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit purus vel sodales rutrum. Suspendisse vitae tincidunt erat, ut scelerisque turpis. Duis et nibh id eros commodo sodales. Donec eget molestie nisl. Nunc imperdiet velit urna, sed vehicula sem iaculis in. Phasellus in tincidunt odio, sed malesuada dolor. <br><br>
 					</p>
 					
 				</div>
@@ -49,39 +49,27 @@
 		<div class="container-fluid light-content" id="travels">
 			<div class="row">
 				<div class="col-md-9">
-					<div id="map"></div>
-					    <script>
-					      var map;
-					      function initMap() {
-					        map = new google.maps.Map(document.getElementById('map'), {
-					          center: {lat: -34.397, lng: 150.644},
-					          zoom: 8
-					        });
-					      }
-					    </script>
-					    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfk_vbwL-V-o2C9BpifIGH4QiT9lc-tgU&callback=initMap"
-					    async defer></script>
+					<div id="map"></div>  
 				</div>
-					<div class="col-md-3">
-					<h3>MY TRAVELS</h3>		
-					<p class="someText">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit purus vel sodales rutrum. Suspendisse vitae tincidunt erat, ut scelerisque turpis. Duis et nibh id eros commodo sodales. Donec eget molestie nisl. Nunc imperdiet velit urna, sed vehicula sem iaculis in. Phasellus in tincidunt odio, sed malesuada dolor. Curabitur erat erat, commodo scelerisque posuere et, imperdiet non ex. Sed faucibus id odio quis lacinia. Vestibulum sem tellus, rhoncus eget nisl vitae, porta tristique lectus. Nulla dapibus tempor ligula ut consequat. Maecenas porttitor massa ut lacinia molestie.<br><br>
-					</p>
+					<div class="col-md-3 myContentContainer">
+						<div class="myContent">
+							<h3>MY TRAVELS</h3>		
+							<p class="someText">
+								I love exploring new cities and experiencing different cultures.  You can see some of the places I have been on the map to the left.  Click on a marker to see more details for each location.<br><br>
+							</p>
+						</div>
 				</div>
 			</div>
 		</div>
 		<div class="content" id="funFacts">
-			<!--<h3 class="h">FUN FACTS</h3>		
-				<p class="someText">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit purus vel sodales rutrum. Suspendisse vitae tincidunt erat, ut scelerisque turpis. Duis et nibh id eros commodo sodales. Donec eget molestie nisl. Nunc imperdiet velit urna, sed vehicula sem iaculis in. Phasellus in tincidunt odio, sed malesuada dolor. Curabitur erat erat, commodo scelerisque posuere et, imperdiet non ex. Sed faucibus id odio quis lacinia. Vestibulum sem tellus, rhoncus eget nisl vitae, porta tristique lectus. Nulla dapibus tempor ligula ut consequat. Maecenas porttitor massa ut lacinia molestie.<br><br>
-
-					Donec vulputate lacus tempus hendrerit hendrerit. Duis pulvinar purus id porttitor ullamcorper. Nunc eu tortor quam. Duis vulputate risus vel nisi molestie, ultrices faucibus arcu condimentum. Suspendisse potenti. Sed quis gravida erat. Proin in orci nec erat aliquet pulvinar. Curabitur nec condimentum magna, ut semper urna. Nam in fermentum urna. Duis diam urna, commodo finibus scelerisque et, iaculis a mi. Suspendisse pretium, neque eu sagittis suscipit, nulla turpis interdum diam, eget rutrum ante leo ut sem. Nulla sagittis lectus vitae turpis eleifend ultrices. Cras ultrices lacus varius, luctus massa eu, accumsan sapien.<br><br>
-
-					Proin rhoncus tincidunt rutrum. Nunc maximus rutrum elit vitae vehicula. Sed ligula lacus, consequat eu mi at, euismod feugiat nisi. Sed hendrerit ipsum ut magna cursus, non porta nibh vulputate. Proin auctor dolor a ante finibus scelerisque. Nullam ultrices sit amet sapien id placerat. Vivamus nunc augue, porta ac neque vitae, dignissim maximus lacus. Phasellus mattis augue ex, commodo commodo risus finibus eu. Etiam interdum ante tempor, auctor sapien eleifend, porttitor elit. Cras nisi ante, varius a est ut, congue scelerisque purus.<br><br>
-				</p>-->
+			
 		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfk_vbwL-V-o2C9BpifIGH4QiT9lc-tgU&callback=initMap"
+	    async defer></script>
+	    <script src="index.js"></script>
 	</body>
 
 </html>

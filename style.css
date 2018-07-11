@@ -1,3 +1,4 @@
+
 h3 {
 	font: bold 2.5em "Arial", sans-serif !important;
 }
@@ -13,10 +14,11 @@ h3 {
 }
 
 .navbar .navbar-collapse {
-	text-align: center;
+	vertical-align: center;
 }
 
 .dark-content {
+	height: 800px;
 	text-align: center;
 	color: #9d9d9d;
 	text-shadow: 0 -1px 0 rgba(0,0,0,.25);
@@ -24,6 +26,7 @@ h3 {
 }
 
 .light-content {
+	height: 800px;
 	text-align: center;
 	color: #2d2d2d;
 	text-shadow: 0 -1px 0 rgba(0,0,0,.25);
@@ -34,13 +37,36 @@ h3 {
 	font: bold 2em "Arial", sans-serif;
 }
 
-#map {
+.vertical-align {
+    display: block;
+    align-items: center;
+}
+
+.myContentContainer {
 	height: 100%;
 }
 
-#id {
-	margin-left: 75%;
+.myContent {
+	margin-top: 50%;
+
 }
+
+.infoWindowImage {
+	max-height: 400px;
+	width: auto;
+}
+
+/*#infowindow{
+	height: 90%;
+	width: auto;
+}*/
+
+#map {
+	height: 650px;
+	margin: 5%;
+}
+
+
 
 #navbarText {
 	font: bold 1em "Arial", sans-serif;
