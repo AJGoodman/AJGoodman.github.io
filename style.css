@@ -14,7 +14,7 @@ h3 {
 }
 
 .navbar .navbar-collapse {
-	vertical-align: center;
+	text-align: center;
 }
 
 .dark-content {
@@ -56,17 +56,10 @@ h3 {
 	width: auto;
 }
 
-/*#infowindow{
-	height: 90%;
-	width: auto;
-}*/
-
 #map {
 	height: 650px;
 	margin: 5%;
 }
-
-
 
 #navbarText {
 	font: bold 1em "Arial", sans-serif;
